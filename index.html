@@ -99,6 +99,37 @@
       line-height: 1.6;
     }
 
+    /* ── PREÇO ── */
+    .price-block {
+      margin: 0.5rem 1rem 0.5rem;
+      background: linear-gradient(135deg, #1C1410, #241810);
+      border: 1px solid #FCBE05;
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .price-icon {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+    }
+    .price-info { flex: 1; }
+    .price-value {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #FCBE05;
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .price-desc {
+      font-size: 0.72rem;
+      color: #9A8878;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+    }
+
     /* ── SECTION LABEL ── */
     .section-label {
       font-size: 0.85rem;
@@ -420,6 +451,15 @@
     <p class="hero-brand-line">Starbucks · Nespresso</p>
     <p class="hero-sub">Duas das melhores marcas de café espresso,<br>num só lugar para você.</p>
   </header>
+
+  <!-- PRECO -->
+  <div class="price-block">
+    <div class="price-icon">☕</div>
+    <div class="price-info">
+      <p class="price-value">R$ 5,99</p>
+      <p class="price-desc">Todas as cápsulas · Inclui copo, açúcar e adoçante</p>
+    </div>
+  </div>
 
   <!-- STARBUCKS -->
   <p class="section-label starbucks">Starbucks</p>
