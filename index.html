@@ -316,6 +316,76 @@
       color: #C8843A;
     }
 
+    /* ── TUTORIAL ── */
+    .tutorial-card {
+      margin: 0 1rem 1rem;
+      background: #1C1410;
+      border: 1px solid #2E2420;
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .tutorial-intro {
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9A8878;
+      margin-bottom: 1.1rem;
+      text-align: center;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      margin-bottom: 0.9rem;
+      position: relative;
+    }
+    .step:not(.step-last)::after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 32px;
+      width: 1px;
+      height: calc(100% + 0.1rem);
+      background: #2E2420;
+    }
+    .step-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #2E2420;
+      border: 1.5px solid #FCBE05;
+      color: #A91BED;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    .step-text {
+      font-size: 0.82rem;
+      color: #F2E8D9;
+      line-height: 1.55;
+      padding-top: 0.35rem;
+    }
+    .step-text strong {
+      color: #FAF7F2;
+      font-weight: 500;
+    }
+    .tutorial-notice {
+      margin-top: 1.2rem;
+      padding: 0.85rem 1rem;
+      background: rgba(169,27,237,0.08);
+      border: 1px solid rgba(169,27,237,0.2);
+      border-radius: 8px;
+      font-size: 0.72rem;
+      color: #9A8878;
+      line-height: 1.6;
+      text-align: center;
+      font-style: italic;
+    }
+
     /* ── FOOTER ── */
     footer {
       margin-top: 2.5rem;
@@ -700,6 +770,55 @@
   </article>
 
   <!-- FOOTER -->
+  <!-- PASSO A PASSO -->
+  <p class="section-label" style="color:#A91BED;">Como Preparar</p>
+
+  <div class="tutorial-card">
+    <p class="tutorial-intro">Máquina Nespresso · Linha Original</p>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">Escolha sua cápsula preferida no pote de vidro e efetue o pagamento no totem.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">Verifique se há água no reservatório da máquina.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">Verifique se o reservatório de cápsulas usadas está cheio — se estiver, esvazie antes de continuar.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-text">Coloque a cápsula no compartimento indicado e feche a alavanca.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-text">Posicione o seu copo embaixo do bico.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">6</div>
+      <div class="step-text">Ligue a máquina pressionando qualquer botão.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">7</div>
+      <div class="step-text"><strong>Aguarde as luzes pararem de piscar</strong> — sinal de que a máquina está pronta.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">8</div>
+      <div class="step-text">Pressione o botão de <strong>café curto</strong> ou <strong>café longo</strong>, conforme sua preferência.</div>
+    </div>
+    <div class="step step-last">
+      <div class="step-num" style="background:#A91BED;">☕</div>
+      <div class="step-text"><strong>Aproveite seu café!</strong></div>
+    </div>
+
+    <div class="tutorial-notice">
+      <p>Ajude-nos a manter este espaço funcionando.<br>
+      Copos, açúcar, adoçante e demais itens são de uso exclusivo da cafeteria.</p>
+    </div>
+  </div>
+
   <footer>
     <p class="footer-logo"><span style="color:#A91BED;">Open</span> <span style="color:#FCBE05;">You</span></p>
     <p class="footer-sub">Espaço Café · Flash Courier</p>
